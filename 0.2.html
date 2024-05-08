@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de registro</title>
+    <style>
+        input[type="text"],input[type="tel"],input[type="date"],input[type="number"],input[type="email"]
+        {
+            border:none;
+            padding: 8px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="imfns.jpg">
+    </center>
+    <center>
+    <table>
+    <p>"Año del buen servicio ciudadano"</p>
+    <p><b>FORMATO 3: DECLARACION JURADA SOCIECONÓMICA</b></p>
+    <tr><td>el presente documento permitira identificar aspectos referidos a la situacion del hogar del estudiante. Es preciso que responda a todas las 
+        <br>preguntas presentadas en cada aspecto de manera clara y veraz.</td></tr>
+    <tr><td><u><b>Llenar con letra clara, legible y evita borrones</b></u></td></tr>
+    </center>
+    <table border="3" style="width: 900px;">
+        <form>
+        <tr>
+            <td colspan="5" style="background-color:#8C928E;"><b>A.DATOS DEL ESTUDIANTE: Completar los datos solicitados</b></td>
+        </tr>
+        <tr>
+            <td colspan="5">apellido paterno:<input type="text" name="napa" size="30" style="width:773px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td colspan="5">apellido materno:<input type="text" name="nama" size="30" style="width:768px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td colspan="5">nombres:<input type="text" name="na" size="30" style="width:820px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="background-color:#8C928E;"><b>Datos Adicionales</b></td>
+        </tr>
+        <tr>
+            <td>sexo:<input type="radio" id="Hombre" name="sexo" value="Hombre" checked>Hombre <input type="radio" id="Mujer" name="sexo" value="Mujer" checked>Mujer</td>
+            <td>edad:<input type="number" id="edad" style="width:170px" step="12" required></td><td>N° de DNI:<input type="text" name="DNI" size="30" style="width:90px;" step="text" required></td>
+            <td>pertenece a alguna etnia?<br><input type="radio" id="si" name="etnia" value="si" checked>Si <input type="radio" id="No" name="etnia" value="No" checked>No</td>
+        </tr>
+        <tr>
+            <td colspan="2">Correo Electronico del Estudiante:<input type="email" name="micorreo" id="micorreo" required></td>
+            <td>telefono del estudiante:<input type="tel" id="edad" style="width:170px" step="12" required></td>
+            <td>lengua meterna:<input type="text" name="mat" size="30" style="width:100px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td>nombres y apellidos de la madre:<br><input type="text" name="naapma" size="30" style="width:200px;" step="text" required></td>
+            <td>nombres y apellidos del padre:<br><input type="text" name="napama" size="30" style="width:200px;" step="text" required></td>
+            <td colspan="2">nombres y apellidos del apoderado, cuando sea el caso:<br><input type="text" name="napa" size="30" style="width:400px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td>N° de DNI de la madre:<input type="text" name="DNIma" size="30" style="width:200px;" step="text" required></td>
+            <td>N° de DNI del padre:<input type="text" name="DNIpa" size="30" style="width:200px;" step="text" required></td>
+            <td colspan="2">N° de DNI del apoderado:<br><input type="text" name="DNIapo" size="30" style="width:300px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="background-color:#8C928E;"><b>Domicilio</b></td>
+        </tr>
+        <tr>
+            <td colspan="5">direccion:<input type="text" name="napa" size="30" style="width:800px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td>distrito:
+                <SELECT NAME="distrito">
+                <OPTION value="coalque">coalque 
+                <OPTION value="la capilla">la capilla 
+                <OPTION value="loque">loque 
+                <OPTION value="ichuña">ichuña
+                <OPTION value="matalaque">matalaque
+                <OPTION value="omate">omate
+                <OPTION value="puquina">puquina
+                <OPTION value="quinistaquille">quinistaquille
+                <OPTION value="ubinas">ubinas
+                <OPTION value="yunga">yunga
+                <OPTION value="pacocha">pacocha
+                <OPTION value="algarrobal">algarrobal
+                <OPTION value="ilo">ilo
+                <OPTION value="cuchunbayas">cuchunbayas
+                <OPTION value="carumas">carumas
+                <OPTION value="moquegua">moquegua
+                <OPTION value="samegua">samegua
+                <OPTION value="san cristobal">san cristobal
+                <OPTION value="torata">torata
+                <option value="chojata">chojata
+                <option value="sa antonio">san antonio
+                </OPTION>
+                </SELECT>
+            </td>
+            <td>provincia:
+                <SELECT NAME="provincia">
+                <OPTION value="ilo">ilo
+                <OPTION value="moquegua">Mariscal Nieto
+                <OPTION value="sanchez">sanchez cerro
+                </SELECT>
+            </td>
+            <td>Region:
+                <SELECT NAME="region">
+                <OPTION value="moquegua">moquegua
+                </SELECT>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" style="background-color:#8C928E;"><b>Datos de nacimiento:</b></td>
+        </tr>
+        <tr>
+            <td>fecha de nacimiento <input type="date" name="fanc"></td>
+            <td colspan="2">provincia denacimiento:<input type="text" name="provna" size="30" style="width:300px;" step="text" required></td>
+            <td>Region de nacimiento:<input type="text" name="regna" size="30" style="width:150px;" step="text" required></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="background-color:#8C928E;"><b>Otros datos:</b></td>
+        </tr>
+        <tr>
+            <td colspan="5">numero de telefono fijo:<input type="tel" name="numtel" size="30" style="width:700px;" step="text" required></td>
+        </tr>
+        </form>
+    </table>
+    </center>
+</body>
+</html>
